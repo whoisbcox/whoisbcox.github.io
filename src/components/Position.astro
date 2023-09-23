@@ -1,0 +1,41 @@
+---
+interface Position {
+	employer: string;
+	title: string;
+	end: string;
+	start: string;
+	location: string;
+	body: string;
+	href: string;
+	skills: string[];
+}
+
+interface Props {
+	position: Position;
+}
+
+const { employer, title, end, start, location, body, href, skills } =
+	Astro.props.position;
+---
+
+<li class="sm:flex sm:flex-row mt-10">
+	<div class="sm:basis-1/4 font-medium text-secondary">
+		{start} &ndash; {end}
+	</div>
+	<div class="sm:basis-3/4 md:pl-2">
+		<h2 class="text-md font-bold text-highlight">
+			{title} &bull; <a href={href} target="_blank">{employer}</a>
+		</h2>
+		<h4 class="font-medium text-secondary">{location}</h4>
+		<p class="mt-4">{body}</p>
+		<ul class="mt-4">
+			{
+				skills.map((skill) => (
+					<li class="inline-block border-2 border-highlight rounded-full mt-2 mr-1 px-4 py-1 text-xs text-secondary font-medium bg-blue-500">
+						{skill}
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</li>
