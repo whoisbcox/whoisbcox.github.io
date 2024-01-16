@@ -7,75 +7,75 @@ import { SocialIcon } from "react-social-icons";
 ---
 
 <Layout title="Brandon Ray Cox">
-	<div class="max-w-screen-xl mx-auto lg:flex lg:flex-row gap-x-4">
-		<header class="lg:basis-1/2 relative after:xl:dat-line">
-			<div class="lg:sticky lg:top-0 pt-8 md:pt-14 lg:py-24">
-				<h1 class="text-2xl lg:text-4xl xl:text-5xl text-secondary font-light">
-					Brandon Ray Cox
-				</h1>
-				<h2 class="pt-2 text-lg text-highlight font-bold">
-					Senior Frontend Developer
-				</h2>
-				<h3 class="text-sm text-secondary">
-					<a href="https://deepfried.com" target="_blank"
-						>Senior Web Developer at Deep Fried Advertising</a
-					>
-				</h3>
-				<ul class="pt-10">
-					{
-						socials.map((social) => (
-							<li class="inline-block mr-4">
-								<a href={social.url} target="_blank">
-									<SocialIcon
-										bgColor="currentColor"
-										fgColor="transparent"
-										url={social.url}
-									/>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</div>
-		</header>
-		<main class="text-sm leading-relaxed lg:basis-1/2 pt-10 lg:py-24">
-			<p>
-				Experienced Senior Frontend Developer with a strong foundation in CSS3,
-				HTML5, PHP, and JavaScript. I'm also well-versed in utilizing frameworks
-				like React, Next.js, and Gatsby to create modern web applications.
-			</p><p class="mt-6">
-				I first started coding around the time when MySpace was the most popular
-				social platform. My intrigue with doing page makeovers led me to start
-				designing and building custom websites for local businesses. I continued
-				to sharpen my skills as a freelancer and was eventually hired as a
-				professional web developer for a small but impactful agency in New
-				Orleans called Deep Fried Advertising, where I provide a wide array of
-				web solutions.
-			</p><p class="mt-6">
-				When I'm not coding, I enjoy spending time with my wife and son,
-				cheering for my favorite sports teams (Razorbacks, Pelicans, and
-				Saints), and savoring the tastiest plant-based food available.
-			</p>
-			<ul role="list" class="pb-8">
-				{positions.map((position) => <Position position={position} />)}
-			</ul>
-		</main>
-	</div>
-	<script>
-		import consoleMessage from "../api/consoleMessage.json";
-		console.log(consoleMessage);
-	</script>
+  <div class="max-w-screen-xl mx-auto lg:flex lg:flex-row gap-x-4">
+    <header class="lg:basis-1/2 relative after:xl:divider-line">
+      <div class="lg:sticky lg:top-0 pt-8 md:pt-14 lg:py-24">
+        <h1 class="text-2xl lg:text-4xl xl:text-5xl text-secondary font-light">
+          Brandon Ray Cox
+        </h1>
+        <h2 class="pt-2 text-lg text-highlight font-bold">
+          Senior Frontend Developer
+        </h2>
+        <h3 class="text-sm text-secondary">
+          <a href="https://deepfried.com" target="_blank"
+            >Senior Web Developer at Deep Fried Advertising</a
+          >
+        </h3>
+        <ul class="pt-10">
+          {
+            socials.map((social) => (
+              <li class="inline-block mr-4">
+                <a href={social.url} target="_blank">
+                  <SocialIcon
+                    bgColor="currentColor"
+                    fgColor="transparent"
+                    url={social.url}
+                  />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </header>
+    <main class="text-sm leading-relaxed lg:basis-1/2 pt-10 lg:py-24">
+      <p>
+        I'm an experienced Senior Frontend Developer with a strong foundation in
+        HTML, CSS, PHP, and JavaScript. I'm also well-versed in utilizing
+        libraries like React and frameworks like Next.js to create modern web
+        applications.
+      </p><p class="mt-6">
+        My coding journey began long ago when I became intrigued with doing
+        MySpace page makeovers, which eventually led me to start designing and
+        building custom websites for local businesses. I continued to sharpen my
+        skills as a freelancer and years later I was hired as a professional web
+        developer for a small agency in New Orleans called Deep Fried
+        Advertising, where I provide a wide array of web solutions.
+      </p><p class="mt-6">
+        When I'm not coding, I enjoy spending time with my wife and son,
+        cheering for my favorite sports teams (Razorbacks, Pelicans, and
+        Saints), and savoring the tastiest plant-based food available.
+      </p>
+      <ul role="list" class="pb-8">
+        {positions.map((position) => <Position position={position} />)}
+      </ul>
+    </main>
+  </div>
+  <script>
+    import consoleMessage from "../api/consoleMessage.json";
+    console.log(consoleMessage);
+  </script>
 </Layout>
 
 <style>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-	@layer utilities {
-		.dat-line {
-			@apply content-[''] block fixed w-px top-12 bottom-12 bg-highlight opacity-20;
-			left: 48%;
-		}
-	}
+  @layer utilities {
+    .divider-line {
+      @apply content-[''] block fixed w-px top-12 bottom-12 bg-highlight opacity-20;
+      left: 48%;
+    }
+  }
 </style>
