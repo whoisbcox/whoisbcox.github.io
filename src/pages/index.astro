@@ -38,13 +38,15 @@ import { SocialIcon } from "react-social-icons";
       </div>
     </header>
     <main class="text-sm leading-relaxed lg:basis-1/2 pt-10 lg:py-24">
-      <Fragment set:html={about.bio} />
+      {about.bio.map((b) => <p>{b}</p>)}
       <ul role="list" class="pb-8">
         {positions.map((position) => <Position position={position} />)}
       </ul>
     </main>
   </div>
   <script>
+    import about from "../api/about.json";
+    console.log(typeof about.name);
     import consoleMessage from "../api/consoleMessage.json";
     console.log(consoleMessage);
   </script>
@@ -59,6 +61,9 @@ import { SocialIcon } from "react-social-icons";
     .divider-line {
       @apply content-[''] block fixed w-px top-12 bottom-12 bg-highlight opacity-20;
       left: 48%;
+    }
+    main p + p {
+      @apply mt-6;
     }
   }
 </style>
