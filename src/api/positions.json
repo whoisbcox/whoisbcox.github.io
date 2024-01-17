@@ -1,0 +1,81 @@
+[
+  {
+    "employer": "Deep Fried Advertising",
+    "title": "Senior Web Developer",
+    "end": "Present",
+    "start": "Jun 2019",
+    "location": "New Orleans, LA (Currently Remote)",
+    "skills": [
+      "HTML5",
+      "SCSS",
+      "ES6 JavaScript",
+      "jQuery",
+      "PHP",
+      "MySQL",
+      "React",
+      "Gatsby",
+      "REST APIs",
+      "GraphQL",
+      "Headless CMS",
+      "WordPress",
+      "Strapi",
+      "Git"
+    ],
+    "body": "I stepped into the role of Senior Web Developer at Deep Fried, undertaking broader responsibilities that include leading the development department with tasks such as delegating responsibilities to team members, training new hires, and handling projects of greater complexity.",
+    "href": "https://deepfried.com"
+  },
+  {
+    "employer": "Deep Fried Advertising",
+    "title": "Web Developer",
+    "end": "Jun 2019",
+    "start": "Nov 2015",
+    "location": "New Orleans, LA",
+    "skills": [
+      "HTML5",
+      "SCSS",
+      "ES6 JavaScript",
+      "jQuery",
+      "PHP",
+      "MySQL",
+      "React",
+      "Gatsby",
+      "REST APIs",
+      "WordPress",
+      "Git"
+    ],
+    "body": "I transformed fully custom-made designs into WordPress sites, utilizing HTML5, CSS3 (typically SASS), PHP, and JavaScript. Beyond WordPress, I expanded my expertise to include React and Gatsby, broadening our offerings and creating modern web solutions.",
+    "href": "https://deepfried.com"
+  },
+  {
+    "employer": "Self Employed",
+    "title": "Graphic Designer & Web Developer",
+    "end": "Nov 2015",
+    "start": "Jan 2003",
+    "location": "Fort Smith, AR",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "PHP",
+      "MySQL",
+      "WordPress",
+      "Drupal"
+    ],
+    "body": "I designed brand identity packages, crafted responsive websites, and managed client projects. I also collaborated as an independent contractor with agencies, creating proposals, invoices, and comprehensive creative briefs.",
+    "href": "https://whoisbcox.com"
+  },
+  {
+    "employer": "University of Arkansas - Fort Smith",
+    "title": "Graphic Design Instructor",
+    "end": "May 2014",
+    "start": "Aug 2013",
+    "location": "Fort Smith, AR",
+    "skills": [
+      "University Teaching",
+      "Training"
+    ],
+    "body": "I taught foundational graphic design classes focusing on 2-D design, color theory, composition, illustration, photography, and typography. I prepared teaching materials, managed classroom activities, and evaluated student work based on objectives and presentation.",
+    "href": "https://uafs.edu"
+  }
+]
