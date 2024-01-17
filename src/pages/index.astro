@@ -16,15 +16,21 @@ import { SocialIcon } from "react-social-icons";
         </h1>
         <h2 class="pt-2 text-lg text-highlight font-bold">{about.title}</h2>
         <h3 class="text-sm text-secondary">
-          <a href="https://deepfried.com" target="_blank"
-            >{about.employment_title}</a
+          <a
+            href="https://deepfried.com"
+            rel="noopener noreferrer nofollow"
+            target="_blank">{about.employment_title}</a
           >
         </h3>
         <ul class="pt-10">
           {
             socials.map((social) => (
               <li class="inline-block mr-4">
-                <a href={social.url} target="_blank">
+                <a
+                  href={social.url}
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                >
                   <SocialIcon
                     bgColor="currentColor"
                     fgColor="transparent"
