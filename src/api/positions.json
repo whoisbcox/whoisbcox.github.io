@@ -6,20 +6,23 @@
     "start": "Jun 2019",
     "location": "New Orleans, LA (Currently Remote)",
     "skills": [
-      "HTML5",
-      "SCSS",
-      "ES6 JavaScript",
+      "HTML",
+      "CSS",
+      "JavaScript",
       "jQuery",
       "PHP",
       "MySQL",
+      "PostgreSQL",
       "React",
-      "Gatsby",
       "REST APIs",
       "GraphQL",
       "Headless CMS",
       "WordPress",
       "Strapi",
-      "Git"
+      "AWS",
+      "Git",
+      "Gulp",
+      "Webpack"
     ],
     "body": "I stepped into the role of Senior Web Developer at Deep Fried, undertaking broader responsibilities that include leading the development department with tasks such as delegating responsibilities to team members, training new hires, and handling projects of greater complexity.",
     "href": "https://deepfried.com"
@@ -31,9 +34,9 @@
     "start": "Nov 2015",
     "location": "New Orleans, LA",
     "skills": [
-      "HTML5",
-      "SCSS",
-      "ES6 JavaScript",
+      "HTML",
+      "CSS",
+      "JavaScript",
       "jQuery",
       "PHP",
       "MySQL",
@@ -41,9 +44,12 @@
       "Gatsby",
       "REST APIs",
       "WordPress",
-      "Git"
+      "AWS",
+      "Git",
+      "Gulp",
+      "Webpack"      
     ],
-    "body": "I transformed fully custom-made designs into WordPress sites, utilizing HTML5, CSS3 (typically SASS), PHP, and JavaScript. Beyond WordPress, I expanded my expertise to include React and Gatsby, broadening our offerings and creating modern web solutions.",
+    "body": "I transformed fully custom-made designs into WordPress sites, utilizing HTML, CSS (typically SASS), PHP, and JavaScript. Beyond WordPress, I expanded my expertise to include React and Gatsby, broadening our offerings and creating modern web solutions.",
     "href": "https://deepfried.com"
   },
   {
