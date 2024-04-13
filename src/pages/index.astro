@@ -4,12 +4,28 @@ import Position from "../components/Position.astro";
 import positions from "../api/positions.json";
 import socials from "../api/socials.json";
 import about from "../api/about.json";
+import projects from "../api/projects.json";
 import { SocialIcon } from "react-social-icons";
+import { Image } from "astro:assets";
+
+interface Project {
+  name: string;
+  url: string;
+  launched: string;
+  image: {
+    url: string;
+    width: number;
+    height: number;
+    alt: string;
+  };
+  summary: string;
+  skills: string[];
+}
 ---
 
 <Layout title={about.name}>
   <div class="max-w-screen-xl mx-auto lg:flex lg:flex-row gap-x-4">
-    <header class="lg:basis-1/2 relative after:xl:divider-line">
+    <header class="lg:basis-5/12 relative after:xl:divider-line">
       <div class="lg:sticky lg:top-0 pt-8 md:pt-14 lg:py-24">
         <h1 class="text-2xl lg:text-4xl xl:text-5xl text-secondary font-light">
           {about.name}
@@ -43,11 +59,44 @@ import { SocialIcon } from "react-social-icons";
         </ul>
       </div>
     </header>
-    <main class="text-sm leading-relaxed lg:basis-1/2 pt-10 lg:py-24">
-      {about.bio.map((b) => <p>{b}</p>)}
+    <main class="leading-relaxed lg:basis-7/12 pt-10 lg:py-24">
+      <div class="text-md">{about.bio.map((b) => <p>{b}</p>)}</div>
+      <h2 class="text-2xl mt-10">Experience</h2>
       <ul role="list" class="pb-8">
         {positions.map((position) => <Position position={position} />)}
       </ul>
+      <h2 class="text-2xl mt-10">Projects</h2>
+      {
+        projects.map((project: Project) => (
+          <div class="sm:flex sm:flex-row mt-10 gap-2">
+            <div class="sm:basis-1/4 font-medium text-secondary">
+              <a href={project.url} target="_blank">
+                <Image
+                  src={project.image.url}
+                  width={project.image.width}
+                  height={project.image.height}
+                  alt={project.image.alt}
+                />
+              </a>
+            </div>
+            <div class="sm:basis-3/4 md:pl-2">
+              <h3 class="text-md font-bold text-highlight">
+                <a href={project.url} target="_blank">
+                  {project.name}
+                </a>
+              </h3>
+              <p>{project.summary}</p>
+              <ul>
+                {project.skills.map((skill) => (
+                  <li class="inline-block border-2 border-highlight rounded-full mt-2 mr-1 px-4 py-1 text-xs text-secondary font-medium bg-blue-500">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))
+      }
     </main>
   </div>
   <script>
@@ -64,7 +113,7 @@ import { SocialIcon } from "react-social-icons";
   @layer utilities {
     .divider-line {
       @apply content-[''] block fixed w-px top-12 bottom-12 bg-highlight opacity-20;
-      left: 48%;
+      left: 41.6%;
     }
     main p + p {
       @apply mt-6;

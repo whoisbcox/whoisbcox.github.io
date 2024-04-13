@@ -1,0 +1,24 @@
+[
+  {
+    "name": "BuyBookBuild.com (Fully functional Demo)",
+    "url": "https://buybookbuild.com",
+    "launched": "Apr 2024",
+    "image": {
+      "url": "../src/images/project-buybookbuild-2024-04-08.png",
+      "width": 300,
+      "height": 200,
+      "alt": "BuyBookBuild.com Thumbnail Image"
+    },
+    "summary": "Web app made for buying, selling, and booking properties. Allows users to set up a profile, list their properties and view incoming submissions from interested prospects.",
+    "skills": [
+      "MongoDB",
+      "Express",
+      "Node.js",
+      "React",
+      "AWS S3",
+      "TypeScript",
+      "Chakra UI",
+      "Zustand"
+    ]
+  }
+]
